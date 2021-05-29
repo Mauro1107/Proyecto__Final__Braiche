@@ -1,0 +1,137 @@
+/*RESET GENERAL CCS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: url(./IMAGENES/Insumos1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* CLASES HEADER */
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  position: fixed;
+}
+
+.Titulomenu {
+  display: flex;
+  color: white;
+  margin-left: 70px;
+  padding: 5px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header label {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* display: flex; */
+  justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid white;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.menu li a {
+  display: flex;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CLASES MAIN */
+
+.main {
+  width: 300px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div1 {
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.div2 {
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.div3 {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+/* CLASES FOOTER */
+
+.footercontenido {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.footerinfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.footerredes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+/* MEDIA QUERY'S */
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+  .footercontenido {
+    display: flex;
+  }
+}

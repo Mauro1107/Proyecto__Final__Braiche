@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultas</title>
+    <link rel="stylesheet" href="./Contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="Titulomenu">Bienvenidos</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./Nosotros.html">NOSOTROS</a></li>
+          <li><a href="./Productos.html">PRODUCTOS</a></li>
+          <li><a href="./Nuestros_Servicios.html">SERVICIOS</a></li>
+          <li><a href="./cursos.html">CURSOS</a></li>
+          <li><a href="./Contacto.html">CONTACTO</a></li>
+          <li><a href="./Galeria.html">GALERIA</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="formulario">
+      <!--FORMULARIO-->
+
+      <div class="Titulo__Mensaje">
+        <h3>Dejanos tu Mensaje</h3>
+      </div>
+
+      <div class="Informacion__Personal">
+        <form action="#">
+          <fieldset>
+            <legend>Informacion Personal</legend>
+
+            <!--Imput para el Nombre-->
+            <div class="Campos">
+              <label for="Nombre"> Nombre </label>
+              <input
+                class="Campos1"
+                placeholder="Ingrese el Nombre"
+                id="Nombre"
+                name="Nombre"
+                type="Nombre"
+              />
+            </div>
+
+            <!--Imput para el Apellido-->
+            <div class="Campos">
+              <label for="Apellido"> Apellido </label>
+              <input
+                class="Campos2"
+                placeholder="Ingrese el Apellido"
+                id="Apellido"
+                name="Apellido"
+                type="Apellido"
+              />
+            </div>
+
+            <!--Imput para el Mail-->
+            <div class="Campos">
+              <label for="E-Mail"> E-Mail </label>
+              <input
+                class="Campos3"
+                placeholder="Ingrese su E-mail"
+                id="E-Mail"
+                name="E-Mail"
+                type="E-Mail"
+              />
+            </div>
+
+            <!--Select-->
+            <div class="Campos">
+              <label for="Estado Civil"> Estado Civil </label>
+              <select name="Estado Civil" id="Estado Civil">
+                <option value="S">Soltero/a</option>
+                <option value="C">Casado/a</option>
+                <option value="O">Otros/as</option>
+              </select>
+            </div>
+
+            <!--Radio Button-->
+            <div class="Campos">
+              <label for="¿Decea Recibir el Newsletter?"
+                >¿Decea Recibir el Newsletter?</label
+              >
+              <input
+                class="Campos4"
+                type="checkbox"
+                value="¿Decea Recibir el Newsletter?"
+                name="ops1"
+                id="¿Decea Recibir el Newsletter?"
+              />
+            </div>
+
+            <!--Comentarios-->
+            <div class="Campos">
+              <textarea
+                class="Campos5"
+                placeholder="Ingrese Comentarios"
+                rows="10"
+                cols="30"
+              ></textarea>
+            </div>
+
+            <!--Boton Enviar Formulario-->
+            <div class="Campos Campos6">
+              <button type="submit">Limpiar Formulario</button>
+              <button type="submit">Enviar Formulario</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footercontenido">
+      <section class="footerinfo">
+        <div>
+          <h5>Cerveza Braiche</h5>
+          <h5>Corrientes 767, Guillermo Hudson</h5>
+          <h5>Tel: 1141654785</h5>
+        </div>
+      </section>
+
+      <section class="footerredes">
+        <div>
+          <h5>
+            Seguinos en nuestras Redes
+            <img src="./IMAGENES/Logo Face2.jpg" />
+            <img src="./IMAGENES/Logo Insta2.jpg" />
+          </h5>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

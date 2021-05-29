@@ -1,0 +1,197 @@
+/*RESET GENERAL CCS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: url(./IMAGENES/Foto37.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* **************************************************************************************************** */
+
+/* CLASES HEADER */
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  position: relative;
+}
+
+.Titulomenu {
+  display: flex;
+  color: white;
+  margin-left: 70px;
+  padding: 5px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+header label:hover {
+  cursor: pointer;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* display: flex; */
+  justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid white;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* **************************************************************************************************** */
+/* CLASES MAIN */
+
+.Padre_caja {
+  /* background-color: #fff; */
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-top: 720px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 90px;
+}
+
+.Circulo1 {
+  width: 150px;
+  height: 150px;
+  background-color: #ff88ff;
+  border-radius: 100px;
+  display: flex;
+}
+
+.imagen1 {
+  background: url(./IMAGENES/images1.jpg);
+}
+
+.Circulo2 {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(65, 54, 165);
+  border-radius: 100px;
+  display: flex;
+}
+
+.imagen2 {
+  background: url(./IMAGENES/Imagen2.jpg);
+}
+
+.Circulo3 {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(67, 185, 31);
+  border-radius: 100px;
+  display: flex;
+}
+
+.imagen3 {
+  background: url(./IMAGENES/Sensorial2.jpg);
+}
+
+.texto {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin-top: 20px;
+  margin-left: 45px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* **************************************************************************************************** */
+/* DEFINIR ANIMACIONES */
+
+.Circulo1:hover {
+  transform: scale(2);
+  transition: 3s;
+}
+
+.Circulo2:hover {
+  transform: scale(2);
+  transition: 3s;
+}
+
+.Circulo3:hover {
+  transform: scale(2);
+  transition: 3s;
+}
+
+/* **************************************************************************************************** */
+
+/* CLASES FOOTER */
+
+.footercontenido {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.footerinfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.footerredes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+/* MEDIA QUERY'S */
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+  .contenido {
+    display: flex;
+  }
+}

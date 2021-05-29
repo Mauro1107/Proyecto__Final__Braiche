@@ -1,0 +1,179 @@
+/*RESET GENERAL CCS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: url(./IMAGENES/ImagenFondoSer2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* **************************************************************************************************** */
+
+/* CLASES HEADER */
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  position: fixed;
+}
+
+.Titulomenu {
+  display: flex;
+  color: white;
+  margin-left: 70px;
+  padding: 5px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+header label:hover {
+  cursor: pointer;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* display: flex; */
+  justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid white;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* **************************************************************************************************** */
+
+/* CLASES MAIN */ /* CLASES DE GRID */
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  position: fixed;
+  margin-top: 250px;
+}
+
+.titulo {
+  padding: 10px;
+  color: brown;
+  margin-left: 140px;
+}
+
+.contenedor__grid {
+  width: 90%;
+  background: white;
+  margin: 50px auto;
+  box-shadow: 0 0 20px #333;
+
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 50px;
+}
+
+.titulo__tabla {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background: rgb(60, 60, 139);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo__main,
+.item__tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo__main {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item__tabla {
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* **************************************************************************************************** */
+
+/* CLASES FOOTER */
+
+.footercontenido {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.footerinfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.footerredes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+/* MEDIA QUERY'S */
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+
+  .contenido {
+    display: flex;
+  }
+}

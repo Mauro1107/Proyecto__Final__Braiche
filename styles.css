@@ -1,0 +1,184 @@
+/*RESET GENERAL CCS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: url(./IMAGENES/Foto37.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* CLASES HEADER */
+
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  position: fixed;
+}
+
+.Titulomenu {
+  display: flex;
+  color: white;
+  margin-left: 70px;
+  padding: 5px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header label {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid white;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* CLASES MAIN */
+
+.contenido {
+  height: 1000px;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap; /*para que se ajuste a la web*/
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cursos {
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
+
+.imagen1 {
+  background: url(./IMAGENES/CursoPrini.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.productos {
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
+
+.imagen2 {
+  background: url(./IMAGENES/insumos.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.servicios {
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
+
+.imagen3 {
+  background: url(./IMAGENES/Servicios.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.galeria {
+  color: black;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
+
+.imagen4 {
+  background: url(./IMAGENES/Galeria.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+/* CLASES FOOTER */
+
+.footercontenido {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.247);
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.footerinfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.footerredes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+/* MEDIA TRASFORM*/
+
+.imagen1:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen2:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen3:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen4:hover {
+  transform: rotateY(90deg);
+}
+
+/* MEDIA QUERY'S */
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+
+  .contenido {
+    display: flex;
+  }
+}
