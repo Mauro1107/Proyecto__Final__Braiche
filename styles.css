@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-html {
+body {
   box-sizing: border-box;
   background: url(./IMAGENES/Foto37.jpg);
   background-size: 100%;
@@ -76,6 +76,8 @@ header label {
   flex-wrap: wrap; /*para que se ajuste a la web*/
   gap: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  margin-left: 750px;
 }
 
 .cursos {
@@ -130,7 +132,6 @@ header label {
 
 .footercontenido {
   width: 100%;
-  height: 80px;
   background: rgba(0, 0, 0, 0.247);
   bottom: 0;
   display: flex;
@@ -142,15 +143,15 @@ header label {
 .footerinfo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  padding: 10px;
-  margin-left: 50px;
+  padding: 5px;
+  margin-left: 40px;
 }
 
 .footerredes {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  padding: 10px;
-  margin-right: 50px;
+  padding: 5px;
+  margin-right: 40px;
 }
 
 /* MEDIA TRASFORM*/

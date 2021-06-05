@@ -96,8 +96,6 @@ header label:hover {
 .Circulo1 {
   width: 150px;
   height: 150px;
-  background-color: #ff88ff;
-  border-radius: 100px;
   display: flex;
 }
 
@@ -108,8 +106,6 @@ header label:hover {
 .Circulo2 {
   width: 150px;
   height: 150px;
-  background-color: rgb(65, 54, 165);
-  border-radius: 100px;
   display: flex;
 }
 
@@ -120,8 +116,7 @@ header label:hover {
 .Circulo3 {
   width: 150px;
   height: 150px;
-  background-color: rgb(67, 185, 31);
-  border-radius: 100px;
+
   display: flex;
 }
 
@@ -132,8 +127,6 @@ header label:hover {
 .texto {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* margin-top: 20px;
-  margin-left: 45px; */
   display: flex;
   justify-content: center;
   align-items: center;

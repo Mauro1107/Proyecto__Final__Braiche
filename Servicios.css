@@ -109,7 +109,7 @@ header label:hover {
 .titulo__tabla {
   grid-column-start: 1;
   grid-column-end: 5;
-  background: rgb(60, 60, 139);
+  background: rgb(180, 28, 28);
   color: white;
   display: flex;
   justify-content: center;
