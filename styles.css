@@ -76,8 +76,7 @@ header label {
   flex-wrap: wrap; /*para que se ajuste a la web*/
   gap: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  margin-left: 750px;
+  margin-left: 1080px;
 }
 
 .cursos {
