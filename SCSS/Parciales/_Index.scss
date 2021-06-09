@@ -1,0 +1,113 @@
+/*AÑIDAR CLASES  */
+
+/* HEADER */
+header {
+  width: 100%;
+  background: $color-1;
+  position: fixed;
+
+  .Titulomenu {
+    display: flex;
+    color: $variale-1;
+    margin-left: 70px;
+    padding: 5px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+  }
+
+  header label {
+    display: flex;
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid white;
+  }
+
+  .menu li {
+    border-right: 1px solid white;
+  }
+
+  .menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: $variale-1;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+/* MAIN */
+
+.contenido {
+  height: 1000px;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap; /*para que se ajuste a la web*/
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 500px;
+  margin-bottom: 300px;
+
+  .contenido__main {
+    color: $variale-1;
+    height: 150px;
+    width: 150px;
+    padding: $variable-2;
+  }
+}
+
+/* FOOTER */
+
+.footercontenido {
+  width: 100%;
+  background: $color-1;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+
+  .footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $variale-1;
+    padding: 5px;
+    margin-left: 40px;
+  }
+}
+
+/**************************************************************************************/
+
+/* CLASES CSS MAIN */
+
+.imagen1 {
+  background: url(./Fotos/CursoPrini.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.imagen2 {
+  background: url(./Fotos/insumos.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.imagen3 {
+  background: url(./Fotos/Servicios.jpg) no-repeat;
+  transition: transform 0.8s;
+}
+
+.imagen4 {
+  background: url(./Fotos/Galeria.jpg) no-repeat;
+  transition: transform 0.8s;
+}

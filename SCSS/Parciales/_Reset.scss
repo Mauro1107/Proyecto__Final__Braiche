@@ -1,0 +1,23 @@
+/*RESET GENERAL CCS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*html {
+  font-size: 62.5%;
+}*/
+
+body {
+  box-sizing: border-box;
+  background: url(./Fotos/Foto37.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+}

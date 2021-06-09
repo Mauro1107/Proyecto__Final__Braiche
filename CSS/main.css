@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*RESET GENERAL CCS*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*html {
+  font-size: 62.5%;
+}*/
+body {
+  box-sizing: border-box;
+  background: url(./Fotos/Foto37.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed; }
+
+body {
+  min-height: 100%; }
+
+/*VARIALES*/
+/*AÑIDAR CLASES  */
+/* HEADER */
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  position: fixed; }
+  header .Titulomenu {
+    display: flex;
+    color: white;
+    margin-left: 70px;
+    padding: 5px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end; }
+  header header label {
+    display: flex;
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid white; }
+  header .menu li {
+    border-right: 1px solid white; }
+  header .menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px; }
+  header .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/* MAIN */
+.contenido {
+  height: 1000px;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  /*para que se ajuste a la web*/
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 500px;
+  margin-bottom: 300px; }
+  .contenido .contenido__main {
+    color: white;
+    height: 150px;
+    width: 150px;
+    padding: 5px; }
+
+/* FOOTER */
+.footercontenido {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.247);
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed; }
+  .footercontenido .footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 5px;
+    margin-left: 40px; }
+
+/**************************************************************************************/
+/* CLASES CSS MAIN */
+.imagen1 {
+  background: url(./Fotos/CursoPrini.jpg) no-repeat;
+  transition: transform 0.8s; }
+
+.imagen2 {
+  background: url(./Fotos/insumos.jpg) no-repeat;
+  transition: transform 0.8s; }
+
+.imagen3 {
+  background: url(./Fotos/Servicios.jpg) no-repeat;
+  transition: transform 0.8s; }
+
+.imagen4 {
+  background: url(./Fotos/Galeria.jpg) no-repeat;
+  transition: transform 0.8s; }
+
+/* MEDIA QUERY'S */
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex; }
+  .contenido {
+    display: flex; } }
+
+/* MEDIA TRASFORM*/
+.imagen1:hover {
+  transform: rotateY(90deg); }
+
+.imagen2:hover {
+  transform: rotateY(90deg); }
+
+.imagen3:hover {
+  transform: rotateY(90deg); }
+
+.imagen4:hover {
+  transform: rotateY(90deg); }
