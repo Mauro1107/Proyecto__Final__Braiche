@@ -1,0 +1,46 @@
+.rosa__viejo {
+  background-color: $color-rosa__viejo;
+  color: rgb(226, 226, 63);
+}
+
+.negro {
+  background-color: $color-negro;
+}
+
+.calculos {
+  &__texto::after {
+    @if $color == Blanco {
+      content: "Variedades y Estilos";
+      background-color: $color-2;
+      color: $color-texto;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+    } @else if $color == Azul {
+      content: "Preparamos Tu Cerveza";
+      background-color: $color-3;
+      @extend .rosa__viejo;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    } @else {
+      content: "Cerveza Braiche";
+      @extend .negro;
+      padding: 5px;
+      color: $color-negro-transparente;
+    }
+  }
+}
+
+.calculos__texto {
+  &--adicional::after {
+    @if $texto--adicional == Artesanal {
+      content: "Armamos la variedad y Estilo que vos quieras";
+      @extend .rosa__viejo;
+    } @else if $color == Blanco {
+      content: "Variedades y Estilos";
+    }
+  }
+}

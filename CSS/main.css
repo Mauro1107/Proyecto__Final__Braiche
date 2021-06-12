@@ -1,4 +1,25 @@
 @charset "UTF-8";
+/*VARIALES*/
+/*VARIALES index*/
+/*VARIALES Productos*/
+.rosa__viejo, .calculos__texto::after, .calculos__texto--adicional::after {
+  background-color: #df4646;
+  color: #e2e23f; }
+
+.negro {
+  background-color: black; }
+
+.calculos__texto::after {
+  content: "Preparamos Tu Cerveza";
+  background-color: #af3b3b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.calculos__texto--adicional::after {
+  content: "Armamos la variedad y Estilo que vos quieras"; }
+
 /*RESET GENERAL CCS*/
 * {
   margin: 0;
@@ -18,7 +39,6 @@ body {
 body {
   min-height: 100%; }
 
-/*VARIALES*/
 /*AÑIDAR CLASES  */
 /* HEADER */
 header {
