@@ -39,6 +39,9 @@ body {
 body {
   min-height: 100%; }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
 /*AÑIDAR CLASES  */
 /* HEADER */
 header {
@@ -50,8 +53,7 @@ header {
     color: white;
     margin-left: 70px;
     padding: 5px;
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    font-style: normal; }
   header .menu ul {
     margin: 0;
     padding: 0;
@@ -72,8 +74,7 @@ header {
     display: block;
     padding: 15px 20px;
     color: white;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    text-decoration: none; }
 
 /* MAIN */
 .contenido {
@@ -84,7 +85,6 @@ header {
   flex-wrap: wrap;
   /*para que se ajuste a la web*/
   gap: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 500px;
   margin-bottom: 300px; }
   .contenido .contenido__main {
@@ -103,7 +103,6 @@ header {
   justify-content: space-between;
   position: fixed; }
   .footercontenido .footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     padding: 5px;
     margin-left: 40px; }

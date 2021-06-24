@@ -5,11 +5,12 @@
   padding: 0;
 }
 
-html {
+body {
   box-sizing: border-box;
-  background: url(./IMAGENES/Insumos1.jpg);
+  background: url(../IMAGENES/Foto37.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  position: relative;
   background-attachment: fixed;
 }
 
@@ -17,14 +18,17 @@ body {
   min-height: 100%;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* **************************************************************************************************** */
 
 /* CLASES HEADER */
-
 header {
   width: 100%;
   background: rgba(0, 0, 0, 0.247);
-  position: fixed;
+  position: relative;
 }
 
 .Titulomenu {
@@ -33,7 +37,6 @@ header {
   margin-left: 70px;
   padding: 5px;
   font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #btn-menu {
@@ -50,14 +53,12 @@ header label {
 
 header label:hover {
   cursor: pointer;
-  /* background: rgba(0, 0, 0, 0.3); */
 }
 
 .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* display: flex; */
   justify-content: flex-end;
 }
 
@@ -75,51 +76,76 @@ header label:hover {
   padding: 15px 20px;
   color: white;
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* **************************************************************************************************** */
-
 /* CLASES MAIN */
 
-.main {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  margin-top: 130px;
+.Padre_caja {
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-top: 720px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 90px;
 }
 
-.titulo {
+.Circulo1 {
+  width: 150px;
+  height: 150px;
+  display: flex;
+}
+
+.imagen1 {
+  background: url(../IMAGENES/images1.jpg);
+}
+
+.Circulo2 {
+  width: 150px;
+  height: 150px;
+  display: flex;
+}
+
+.imagen2 {
+  background: url(../IMAGENES/Imagen2.jpg);
+}
+
+.Circulo3 {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+}
+
+.imagen3 {
+  background: url(../IMAGENES/Sensorial2.jpg);
+}
+
+.texto {
   color: white;
-  background-color: rgb(180, 28, 28);
   display: flex;
   justify-content: center;
-}
-
-.lista {
-  padding: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  flex-direction: column;
-  display: flex;
   align-items: center;
-  list-style: none;
-  background-color: rgba(0, 0, 0, 0.274);
-  font-size: 25px;
-  font-style: normal;
-  color: white;
 }
 
-.Titulo__Cerveza {
-  color: black;
-  font-size: 25px;
-  justify-content: center;
+/* **************************************************************************************************** */
+/* DEFINIR ANIMACIONES */
+
+.Circulo1:hover {
+  transform: scale(2);
+  transition: 3s;
 }
 
-.tamaño {
-  display: flexbox;
-  justify-content: center;
-  width: 700px;
-  margin-left: 33%;
+.Circulo2:hover {
+  transform: scale(2);
+  transition: 3s;
+}
+
+.Circulo3:hover {
+  transform: scale(2);
+  transition: 3s;
 }
 
 /* **************************************************************************************************** */
@@ -137,47 +163,24 @@ header label:hover {
 }
 
 .footerinfo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   padding: 10px;
   margin-left: 50px;
 }
 
 .footerredes {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   padding: 10px;
   margin-right: 50px;
 }
 
-/* **************************************************************************************************** */
-
 /* MEDIA QUERY'S */
 
-@media (min-width: 804px) {
+@media (min-width: 768px) {
   .menu ul {
     display: flex;
   }
-
   .contenido {
     display: flex;
-  }
-
-  .columna {
-    width: 30%;
-  }
-}
-
-@media (max-width: 934px) {
-  .titulo {
-    display: none;
-  }
-
-  .lista {
-    font-size: 13px;
-  }
-
-  .menu {
-    font-size: 15px;
   }
 }

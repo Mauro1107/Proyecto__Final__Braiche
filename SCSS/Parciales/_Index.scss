@@ -12,7 +12,6 @@ header {
     margin-left: 70px;
     padding: 5px;
     font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .menu ul {
@@ -44,7 +43,6 @@ header {
     padding: 15px 20px;
     color: $variale-1;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
 
@@ -57,7 +55,7 @@ header {
   align-items: flex-end;
   flex-wrap: wrap; /*para que se ajuste a la web*/
   gap: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   margin-left: 500px;
   margin-bottom: 300px;
 
@@ -81,7 +79,6 @@ header {
   position: fixed;
 
   .footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $variale-1;
     padding: 5px;
     margin-left: 40px;

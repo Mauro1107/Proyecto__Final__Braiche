@@ -5,9 +5,9 @@
   padding: 0;
 }
 
-html {
+body {
   box-sizing: border-box;
-  background: url(./IMAGENES/Foto37.jpg);
+  background: url(../IMAGENES/Foto37.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -23,7 +23,7 @@ body {
 header {
   width: 100%;
   background: rgba(0, 0, 0, 0.247);
-  position: static;
+  position: fixed;
 }
 
 .Titulomenu {
@@ -35,10 +35,6 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#btn-menu {
-  display: none;
-}
-
 header label {
   display: flex;
   width: 40px;
@@ -47,16 +43,10 @@ header label {
   border-right: 1px solid white;
 }
 
-header label:hover {
-  cursor: pointer;
-  /* background: rgba(0, 0, 0, 0.3); */
-}
-
 .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* display: flex; */
   justify-content: flex-end;
 }
 
@@ -78,69 +68,63 @@ header label:hover {
 }
 /* CLASES MAIN */
 
-.formulario {
-  background-color: rgb(63, 62, 61);
-  width: 400px;
-  height: auto;
-  display: flex;
-  border-radius: 20px;
-  margin: 20px;
-  margin-top: 100px;
-  margin-left: 1400px;
-  flex-direction: column;
+.contenido {
+  height: 1000px;
+  display: none;
   justify-content: center;
-  box-sizing: border-box;
-}
-
-.Titulo__Mensaje {
-  background-color: rgb(180, 28, 28);
-  width: auto;
-  height: 100px;
-  color: white;
-  font-size: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap; /*para que se ajuste a la web*/
+  gap: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 1080px;
 }
 
-.Informacion__Personal {
-  margin-top: 50px;
-  padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.cursos {
   color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
 }
 
-.Campos {
-  padding: 10px;
-  display: flex;
+.imagen1 {
+  background: url(../IMAGENES/CursoPrini.jpg) no-repeat;
+  transition: transform 0.8s;
 }
 
-.Campos1 {
-  margin-left: 20px;
+.productos {
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
 }
 
-.Campos2 {
-  margin-left: 20px;
+.imagen2 {
+  background: url(../IMAGENES/insumos.jpg) no-repeat;
+  transition: transform 0.8s;
 }
 
-.Campos3 {
-  margin-left: 34px;
+.servicios {
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
 }
 
-.Campos4 {
-  margin-left: 10px;
-  margin-top: 5px;
+.imagen3 {
+  background: url(../IMAGENES/Servicios.jpg) no-repeat;
+  transition: transform 0.8s;
 }
 
-.Campos5 {
-  margin-top: 10px;
-  margin-left: 20px;
+.galeria {
+  color: black;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
 }
 
-.Campos6 {
-  margin-left: 35px;
+.imagen4 {
+  background: url(./IMAGENES/Galeria.jpg) no-repeat;
+  transition: transform 0.8s;
 }
 
 /* CLASES FOOTER */
@@ -158,22 +142,38 @@ header label:hover {
 .footerinfo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  padding: 10px;
-  margin-left: 50px;
+  padding: 5px;
+  margin-left: 40px;
 }
 
 .footerredes {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  padding: 10px;
-  margin-right: 50px;
+  padding: 5px;
+  margin-right: 40px;
 }
 
-/* **************************************************************************************************** */
+/* MEDIA TRASFORM*/
+
+.imagen1:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen2:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen3:hover {
+  transform: rotateY(90deg);
+}
+
+.imagen4:hover {
+  transform: rotateY(90deg);
+}
 
 /* MEDIA QUERY'S */
 
-@media (min-width: 839px) {
+@media (min-width: 768px) {
   .menu ul {
     display: flex;
   }
@@ -181,24 +181,4 @@ header label:hover {
   .contenido {
     display: flex;
   }
-
-  .columna {
-    width: 30%;
-  }
 }
-
-@media (max-width: 934px) {
-  .menu {
-    font-size: 15px;
-  }
-}
-
-/* @media (max-width: 360px) {
-  .Formulario {
-    background-color: rgb(10, 186, 240);
-  }
-
-  .Mensaje {
-    display: none;
-  }
-} */

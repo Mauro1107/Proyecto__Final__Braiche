@@ -7,10 +7,9 @@
 
 html {
   box-sizing: border-box;
-  background: url(./IMAGENES/Insumos1.jpg);
+  background: url(../IMAGENES/Insumos1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  position: relative;
   background-attachment: fixed;
 }
 
@@ -18,7 +17,10 @@ body {
   min-height: 100%;
 }
 
+/* **************************************************************************************************** */
+
 /* CLASES HEADER */
+
 header {
   width: 100%;
   background: rgba(0, 0, 0, 0.247);
@@ -34,12 +36,21 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#btn-menu {
+  display: none;
+}
+
 header label {
   display: flex;
   width: 40px;
   height: 30px;
   padding: 10px;
   border-right: 1px solid white;
+}
+
+header label:hover {
+  cursor: pointer;
+  /* background: rgba(0, 0, 0, 0.3); */
 }
 
 .menu ul {
@@ -60,44 +71,59 @@ header label {
 }
 
 .menu li a {
-  display: flex;
+  display: block;
   padding: 15px 20px;
   color: white;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* **************************************************************************************************** */
+
 /* CLASES MAIN */
 
 .main {
-  width: 300px;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: auto;
   position: absolute;
-  margin-top: 250px;
+  margin-top: 130px;
+  padding-bottom: 600px;
+}
+
+.titulo {
+  color: white;
+  background-color: rgb(180, 28, 28);
   display: flex;
-  flex-direction: column;
-  margin-left: 40%;
+  justify-content: center;
+}
+
+.lista {
+  padding: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.div1 {
-  height: 100px;
-  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.274);
+  font-size: 25px;
+  font-style: normal;
   color: white;
 }
 
-.div2 {
-  height: 100px;
-  padding: 20px;
-  color: white;
+.Titulo__Cerveza {
+  color: black;
+  font-size: 25px;
+  justify-content: center;
 }
 
-.div3 {
-  height: 150px;
-  padding: 20px;
-  color: white;
+.tamaño {
+  display: flexbox;
+  justify-content: center;
+  width: 700px;
+  margin-left: 33%;
 }
+
+/* **************************************************************************************************** */
 
 /* CLASES FOOTER */
 
@@ -125,13 +151,34 @@ header label {
   margin-right: 50px;
 }
 
+/* **************************************************************************************************** */
+
 /* MEDIA QUERY'S */
 
-@media (min-width: 768px) {
+@media (min-width: 804px) {
   .menu ul {
     display: flex;
   }
-  .footercontenido {
+
+  .contenido {
     display: flex;
+  }
+
+  .columna {
+    width: 30%;
+  }
+}
+
+@media (max-width: 934px) {
+  .titulo {
+    display: none;
+  }
+
+  .lista {
+    font-size: 13px;
+  }
+
+  .menu {
+    font-size: 15px;
   }
 }
